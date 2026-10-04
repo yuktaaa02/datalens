@@ -1,6 +1,37 @@
-﻿venv/
+﻿# Virtual Environments
+venv/
+env/
+ENV/
 .venv/
+
+# Python Bytecode & Cache
 __pycache__/
 *.py[cod]
-.pytest_cache/
+*$py.class
+*.pytest_cache/
+.coverage
+htmlcov/
+
+# Data Files & Temporary Uploads
 data/*.csv
+data/*.xlsx
+data/temp/
+
+# Serialized ML Models & Pipeline Exports
+exports/
+*.joblib
+*.pkl
+
+# Environment Variables & Secrets
+.env
+.env.*
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Specific Files
+.DS_Store
+Thumbs.db
